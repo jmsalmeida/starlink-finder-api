@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  resources :starlinks, path: 'starlinks', only: %i[index]
+  get 'starlinks/closest-satellites', to: 'starlinks#closest_satellites'
 end
