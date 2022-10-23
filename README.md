@@ -4,20 +4,19 @@
 - Ruby 3.1.1
 
 * System dependencies
+- Rails basiv dependencies
+- Rack cors
+- Haversine
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Running the service with Docker
+* Running the service with Docker Compose
 - Build the container
 
 ```bash
-docker build -t api .
+docker compose build
 ```
 
 - Run the container on the port `3000`
 
 ```bash
-docker run -dp 3000:3000 api
+docker compose up
 ```
